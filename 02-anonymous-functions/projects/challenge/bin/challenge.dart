@@ -37,7 +37,7 @@ void higherOrderFunctionsExercise() {
 void callbackFunctionsExercise() {
   /// 5. In `main`, create an instance of `Surface` and pass in an anonymous
   ///    function that prints the x,y coordinates.
-  final surface = Surface((x, y) => print('($x, $y)'));
+  final surface = Surface(onTouch: (x, y) => print('($x, $y)'));
 
   /// 6. Still in `main`, call `touch` where x is `202.3` and y is `134.0`.
   surface.touch(202.333, 134.0);
